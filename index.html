@@ -1,0 +1,56 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.9.2.custom.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+	<script type="text/javascript" src="lib/underscore.js"></script>
+	<script type="text/javascript" src="lib/backbone.js"></script>
+	<script type="text/javascript" src="lib/require.js" data-main="js/main"></script>
+
+	<!-- templates -->
+	<script type="text/template" id="field_template">
+		<ul>
+			<li>
+				<label>field name</label>
+				<input type="text" class="name ui-corner-all" />
+			</li>
+			<li>
+				<label>value</label>
+				<input type="text" class="value ui-corner-all" />
+			</li>
+			<li>
+				<div class="ui-state-default ui-corner-all delete">
+					<span class="ui-icon ui-icon-trash"></span>
+				</div>
+			</li>
+		</ul>
+	</script>
+</head>
+<body>
+	<div id="wrapper" class="ui-corner-all">
+		<div id="message"></div>
+		<ul>
+			<li>
+				<label>noun</label>
+				<input id="noun" class="ui-corner-all" />
+			</li>
+			<li>
+				<label>id</label>
+				<input id="id" class="ui-corner-all" />
+			</li>
+		</ul>
+		<div id="restButtons">
+			<button id="get">get</button>
+			<button id="post">post</button>
+			<button id="put">put</button>
+			<button id="delete">delete</button>
+		</div>
+		<div id="fields"></div>
+		<a id="newField" href="#">new field</a>
+		<label>response</label>
+		<textarea id="response" class="ui-corner-all"></textarea>
+	</div>
+</body>
+</html>
